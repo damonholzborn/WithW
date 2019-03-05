@@ -71,13 +71,13 @@
 					<h2>LIVE mode</h2>
 				</div>
 				<div class="mode_description">
-					<span class="w_buttons">play</span> (while in <span class="w_modes">NAV</span> mode)
-					<nobr>top LEDs: <span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></nobr>
+					<span class="w_buttons">play</span> (while in <span class="w_modes">NAV</span> mode)<br>
+					top LEDs: <span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span>
 				</div>
 			</div>
-			<div class="mode_buttons">
-				<h3>LIVE mode Buttons</h3>
+			<div class="mode_info">
 
+				<h3>LIVE mode Buttons</h3>
 
 				<div class="item_header">
 					<h4>transport</h4>
@@ -160,11 +160,11 @@
 
 				<div class="item_header">
 					<div class="mode_title cv">
-							<h4>dub</h4>
+						<h4>dub</h4>
 					</div>
 					<div class="mode_description cv">
-							<i>toggle recording and level (default)</i><br>
-							select with <span class="w_buttons">play</span>
+						<i>toggle recording and level (default)</i><br>
+						select with <span class="w_buttons">play</span>
 					</div>
 				</div>
 
@@ -191,7 +191,7 @@
 
 				<div class="item_header">
 					<div class="mode_title cv">
-							<h4>transport</h4>
+						<h4>transport</h4>
 					</div>
 					<div class="mode_description">
 							<i>cues and speed (identical to <span class="w_modes">NAV</span> mode)</i><br>
@@ -212,11 +212,11 @@
 
 				<div class="item_header">
 					<div class="mode_title cv">
-							<h4>signal</h4>
+						<h4>signal</h4>
 					</div>
 					<div class="mode_description">
-							<i>location ramp output and boundry trigger</i><br>
-							select with <span class="w_buttons">loop</span>
+						<i>location ramp output and boundry trigger</i><br>
+						select with <span class="w_buttons">loop</span>
 					</div>
 				</div>
 				<div class="cv_list_item">
@@ -232,11 +232,11 @@
 	
 				<div class="item_header">
 					<div class="mode_title cv">
-							<h4>caption</h4>
+						<h4>caption</h4>
 					</div>
 					<div class="mode_description">
-							<i>record CV</i><br>
-							select with <span class="w_buttons">record</span>
+						<i>record CV</i><br>
+						select with <span class="w_buttons">record</span>
 					</div>
 				</div>
 				<div class="cv_list_item">
@@ -252,19 +252,19 @@
 
 				<div class="item_header">
 					<div class="mode_title cv">
-							<h4>sample</h4>
+						<h4>sample</h4>
 					</div>
 					<div class="mode_description">
-							<i> jump cues and v/octave pitch shift (similar to <span class="w_modes">CUE</span> mode)</i><br>
-							select with <span class="w_buttons">▼</span>
+						<i> jump cues and v/octave pitch shift (similar to <span class="w_modes">CUE</span> mode)</i><br>
+						select with <span class="w_buttons">▼</span>
 					</div>
 				</div>
 				<div class="cv_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_this_that">THIS</span></div>
 					<div class="buttons_list_item_info">input: trigger</div>
 					<div class="buttons_list_item_info">go to the most recently passed cue immediately - attaching a
-							parallel static voltage (-1V to 1V) allows it to jump forward or
-							backward by a single cue</div>
+						parallel static voltage (-1V to 1V) allows it to jump forward or
+						backward by a single cue</div>
 				</div>
 				<div class="cv_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_this_that">THAT</span></div>
@@ -272,42 +272,71 @@
 					<div class="buttons_list_item_info">v/octave tape speed</div>
 				</div>
 
+				<h3>LIVE mode LEDs</h3>
+
+				<div class="item_header">
+					<h4>w/ (top)</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span></div>
+					<div class="buttons_list_item_info"><i>blinks to indicate play speed</i></div>
+				</div>
+				<div class="item_header">
+					<h4>loop</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons">all off</div>
+					<div class="buttons_list_item_info">not looping</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">looping - <i>brightness indicates current loop position</i></div>
+				</div>
+				<div class="item_header">
+					<h4>play</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> to <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">tape speed - fast backwards (<span class="w_leds_orange">orange</span>) to fast forwards (<span class="w_leds_white">white</span>)
+						</div>
+				</div>
+				<div class="item_header">
+					<h4>record</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons">all off</div>
+					<div class="buttons_list_item_info">not recording</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">recording in overdub mode</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">recording in overwrite mode</div>
+				</div>
+
 			</div>
+
 		</div> <!-- *********   /end LIVE mode   *********-->
 
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-<!-- *********   FAKE modes   FAKE modes   FAKE modes   FAKE modes   ********* -->
-
-
-
-		<div id="othermode"> <!-- *********   NAV mode   ********* -->
+		<div id="navmode"> <!-- *********   NAV mode   ********* -->
 			<div class="mode_header">
 				<div class="mode_title">
 					<h2>NAV mode</h2>
 				</div>
 				<div class="mode_description">
-					<span class="w_buttons">play</span> (while in <span class="w_modes">LIVE</span> mode)  
-					<nobr>top LEDs: <span class="w_leds_orange">orange</span></nobr>
+					<span class="w_buttons">play</span> (while in <span class="w_modes">LIVE</span> mode)<br> 
+					top LEDs: <span class="w_leds_orange">orange</span>
 				</div>
 			</div>
-			<div class="mode_buttons">
+			<div class="mode_info">
+
 				<h3>NAV mode Buttons</h3>
 
-				<h4>transport</h4>
+				<div class="item_header">
+					<h4>transport</h4>
+				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▲</span></div>
 					<div class="buttons_list_item_info">rewind tape</div>
@@ -339,7 +368,9 @@
 					<div class="buttons_list_item_info">toggle overdub/overwrite</div>
 				</div>
 
-				<h4>cues</h4>
+				<div class="item_header">
+					<h4>cues</h4>
+				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span> + <span class="w_buttons">▲</span></div>
 					<div class="buttons_list_item_info">go to next cue</div>
@@ -349,7 +380,9 @@
 					<div class="buttons_list_item_info">go to previous cue</div>
 				</div>
 
-				<h4>switch modes</h4>
+				<div class="item_header">
+					<h4>switch modes</h4>
+				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span></div>
 					<div class="buttons_list_item_info">switch to PLAY mode</div>
@@ -362,179 +395,126 @@
 					<div class="buttons_list_item_buttons"><span class="w_buttons">record (hold)</span></div>
 					<div class="buttons_list_item_info">switch to GLOBAL mode</div>
 				</div>
+
+				<h3>NAV mode CV Control</h3>
+
+				<div class="cv_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_this_that">THIS</span></div>
+					<div class="buttons_list_item_info">input: -5v to +5v</div>
+					<div class="buttons_list_item_info">when playhead reaches a cue point, jumps to the cue indicated by <span class="w_this_that">THIS</span> voltage - <i>all cue points are evenly distributed</i></div>
+				</div>
+				<div class="cv_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_this_that">THAT</span></div>
+					<div class="buttons_list_item_info">input: -5v to +5v</div>
+					<div class="buttons_list_item_info">tape speed - <i>fast backwards (-5v) to fast forwards (+5v)</i></div>
+				</div>
+
+				<h3>NAV mode LEDs</h3>
+
+				<div class="item_header">
+					<h4>w/ (top)</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span></div>
+					<div class="buttons_list_item_info"><i>blinks to indicate play speed</i></div>
+				</div>
+				<div class="item_header">
+					<h4>loop</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons">all off</div>
+					<div class="buttons_list_item_info">not looping</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">looping - <i>brightness indicates current loop position</i></div>
+				</div>
+				<div class="item_header">
+					<h4>play</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> to <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">tape speed - <i>fast backwards (<span class="w_leds_orange">orange</span>) to fast forwards (<span class="w_leds_white">white</span>)</i></div>
+				</div>
+				<div class="item_header">
+					<h4>record</h4>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons">all off</div>
+					<div class="buttons_list_item_info">not recording</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">recording in overdub mode</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">recording in overwrite mode</div>
+				</div>
+
 			</div>
-		</div> <!-- *********   /end NAV mode   *********-->
+
+		</div> <!-- *********   /end NAV mode   ********* -->
 		
-	
-		<div id="othermode"> <!-- *********   FAKE2 mode   ********* -->
+		<div id="cuemode"> <!-- *********   CUE mode   ********* -->
 			<div class="mode_header">
 				<div class="mode_title">
 					<h2>CUE mode</h2>
 				</div>
 				<div class="mode_description">
-					<span class="w_buttons">play</span> (while in <span class="w_modes">NAV</span> mode)  <nobr>top LEDs: <span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></nobr>
+					<span class="w_buttons">play</span> (while in <span class="w_modes">LIVE</span> mode)<br> 
+					top LEDs: <span class="w_leds_orange">orange</span>
 				</div>
 			</div>
-			<div class="mode_buttons">
+			<div class="mode_info">
+
 				<h3>CUE mode Buttons</h3>
 
-				<h4>transport</h4>
-			
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">double speed</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">half speed</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span></div>
-					<div class="buttons_list_item_info">toggle loop</div>
-				</div>
+
+				<h3>CUE mode CV Control</h3>
+
 				
-				<div class="buttons_state">while playing</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">start overdub recording</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">start overwrite recording</div>
-				</div>
-				
-				<div class="buttons_state">while recording</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">stop recording</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">toggle overdub/overwrite</div>
-				</div>
 
-				<h4>cues</h4>
+				<h3>CUE mode LEDs</h3>
 
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">add a cue</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">add a cue and start looping</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">add a cue and record</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">go to next cue</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">go to previous cue</div>
-				</div>
-
-				<h4>switch modes</h4>
-
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span></div>
-					<div class="buttons_list_item_info">switch to NAV mode</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> (hold)</div>
-					<div class="buttons_list_item_info">switch to GLOBAL mode</div>
-				</div>
+	
 			</div>
-		</div> <!-- *********   /end FAKE2 mode   *********-->		
 
+		</div> <!-- *********   /end CUE mode   ********* -->
 
-		<div id="othermode"> <!-- *********   FAKE3 mode   ********* -->
+		<div id="globalmode"> <!-- *********   GLOBAL mode   ********* -->
 			<div class="mode_header">
 				<div class="mode_title">
 					<h2>GLOBAL mode</h2>
 				</div>
 				<div class="mode_description">
-					<span class="w_buttons">play</span> (while in <span class="w_modes">NAV</span> mode)  <nobr>top LEDs: <span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></nobr>
+					<span class="w_buttons">play</span> (while in <span class="w_modes">LIVE</span> mode)<br>  
+					top LEDs: <span class="w_leds_orange">orange</span>
 				</div>
 			</div>
-			<div class="mode_buttons">
+			<div class="mode_info">
+
 				<h3>GLOBAL mode Buttons</h3>
 
-				<h4>transport</h4>
-			
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">double speed</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">half speed</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span></div>
-					<div class="buttons_list_item_info">toggle loop</div>
-				</div>
+
+				<h3>GLOBAL mode CV Control</h3>
+
 				
-				<div class="buttons_state">while playing</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">start overdub recording</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">start overwrite recording</div>
-				</div>
-				
-				<div class="buttons_state">while recording</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">stop recording</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">toggle overdub/overwrite</div>
-				</div>
 
-				<h4>cues</h4>
+				<h3>GLOBAL mode LEDs</h3>
 
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">add a cue</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">add a cue and start looping</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">record</span></div>
-					<div class="buttons_list_item_info">add a cue and record</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">▲</span></div>
-					<div class="buttons_list_item_info">go to next cue</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span>  + <span class="w_buttons">▼</span></div>
-					<div class="buttons_list_item_info">go to previous cue</div>
-				</div>
-
-				<h4>switch modes</h4>
-
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span></div>
-					<div class="buttons_list_item_info">switch to NAV mode</div>
-				</div>
-				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">record</span> (hold)</div>
-					<div class="buttons_list_item_info">switch to GLOBAL mode</div>
-				</div>
+	
 			</div>
-		</div> <!-- *********   /end FAKE3 mode   *********-->		
+
+		</div> <!-- *********   /end GLOBAL mode   ********* -->
+		
+	
+
 
 <!-- 
-			<h4>transport</h4>
+			<div class="item_header">
+				<h4>transport</h4>
+			</div>
 			<div class="buttons_state">while playing</div>
 			<div class="buttons_list_item">
 				<div class="buttons_list_item_buttons"><span class="w_buttons">dfsd</span>  + <span class="w_buttons">dfdf</span></div>
@@ -543,12 +523,45 @@
 
 
 			<div class="buttons_state">while playing</div>
-			<div class="buttons_list_item">
+			<div class="cv_list_item">
 				<div class="buttons_list_item_buttons"><span class="w_this_that">dfsd</span></div>
+				<div class="buttons_list_item_info">dfdf</div>
+				<div class="buttons_list_item_info">dfdf</div>
+			</div>
+
+			<div class="item_header">
+				<h4>w/ (top)</h4>
+			</div>
+			<div class="buttons_list_item">
+				<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+				<div class="buttons_list_item_info">dfdf</div>
+			</div>
+			<div class="item_header">
+				<h4>loop</h4>
+			</div>
+			<div class="buttons_list_item">
+				<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+				<div class="buttons_list_item_info">dfdf</div>
+			</div>
+			<div class="item_header">
+				<h4>play</h4>
+			</div>
+			<div class="buttons_list_item">
+				<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+				<div class="buttons_list_item_info">dfdf</div>
+			</div>
+			<div class="item_header">
+				<h4>record</h4>
+			</div>
+			<div class="buttons_list_item">
+				<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
 				<div class="buttons_list_item_info">dfdf</div>
 			</div>
 
  -->
+
+
+
 	</div>
 </main>
 

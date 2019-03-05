@@ -3,7 +3,6 @@
 --bg-color-light: #1d1d1d;
 --fg-color: #ccc;
 --hl-color: #999999;
---headline-color: #777;
 
 
 --margins: 12px;
@@ -139,21 +138,69 @@ h1 {
 
     #modes {
         grid-template-columns: repeat(3, 1fr);
-    }    
+    }   
+
+    #modes div {
+        grid-row: 1 / 3;
+    }
+
+    #modes div:nth-child(3) {
+        grid-row: 1 / 2;
+    } 
+
+    #modes div:nth-child(4) {
+        grid-row: 2 / 4;
+    } 
 }
 
 @media only screen and (max-width: 1300px) {
 
     #modes {
         grid-template-columns: repeat(2, 1fr);
-    }    
+        /* grid-template-rows: min-content min-content min-content min-content; */
+        grid-template-rows: max-content max-content min-content ;
+    } 
+
+    #modes div {
+        grid-row: 1 / 4;
+    }
+
+    #modes div:nth-child(2) {
+        grid-row: 1 / 2;
+    } 
+
+    #modes div:nth-child(3) {
+        grid-row: 2 / 3;
+    } 
+
+    #modes div:nth-child(4) {
+        grid-row: 3 / 4;
+    } 
 }
 
 @media only screen and (max-width: 900px) {
 
     #modes {
         grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(4, 1fr) !important; */
     }    
+    
+    #modes div {
+        grid-row: initial;
+    }
+
+    #modes div:nth-child(2) {
+        grid-row: initial;
+    } 
+
+    #modes div:nth-child(3) {
+        grid-row: initial;
+    } 
+
+    #modes div:nth-child(4) {
+        grid-row: initial;
+    } 
+
 }
 
 #modes > div {
@@ -165,7 +212,8 @@ h1 {
 h3 {
     margin-top: 36px;
     font-size: 1.5em;
-    color: var(--headline-color);
+    color: var(--hl-color);
+    color: #ccc;
 }
 
 /* *** w/ Mode Header *** */
@@ -187,6 +235,7 @@ h3 {
     /* line-height: 0; */
     background-color: var(--bg-color-light);
     margin: 8px 0;
+    padding: 4px 6px;
 }
 
 .mode_title {
@@ -194,8 +243,9 @@ h3 {
 }
 
 .mode_title.cv {
+    line-height: 1.6em;
     padding-right: 0;
-    width: 110px;
+    width: 104px;
 }
 
 .mode_description.cv {
@@ -209,24 +259,30 @@ h3 {
 
 /* *** w/ Button Info *** */
 
-.mode_buttons {
-    line-height: 1.8em;
+.mode_info {
+    /* line-height: 1.8em; */
 }
 
 h4 {
-    color: var(--headline-color);
+    color: var(--hl-color);
     display: inline;
     margin: 0;
 
 }
 
 .buttons_list_item {
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    padding: 5px 0 5px 30px;
     display: grid;
     grid-template-columns: 130px auto;
 }
 
+.buttons_list_item_info, .buttons_list_item_buttons {
+    line-height: 1.35em;
+}
+ 
 .buttons_state {
+    padding: 7px 0 5px;
     font-style: italic;
     padding-left: 10px;
 }
@@ -234,7 +290,7 @@ h4 {
 .cv_list_item {
     padding-left: 38px;
     display: grid;
-    grid-template-columns: 70px 136px auto;
+    grid-template-columns: 60px 136px auto;
 }
 
 
@@ -243,7 +299,7 @@ h4 {
 
 h2 {
     font-size: 1.8em;
-    color: var(--headline-color);
+    color: var(--hl-color);
     display: inline;
 }
 
