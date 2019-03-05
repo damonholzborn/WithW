@@ -29,6 +29,6 @@ window.onload = function() {
         setTimeout(function() {
             menuButton.click();
 
-        }, 2100);
+        }, 1200);
     }
 }
