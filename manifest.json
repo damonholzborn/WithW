@@ -1,0 +1,21 @@
+{
+    "name": "with w/",
+    "short_name": "with w/",
+    "description": "Browser-based reference guide for the Mannequins w/ eurorack module.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "theme_color": "#ffffff",
+    "background_color": "#1d1d1d",
+    "display": "standalone"
+}
