@@ -173,8 +173,8 @@
 				<div class="buttons_state">while playing</div>
 				<div class="cv_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_this_that">THAT</span></div>
-					<div class="buttons_list_item_info">input: 0 to +5v</div>
-					<div class="buttons_list_item_info">playback level (5v is quieter)</div>
+					<div class="buttons_list_item_info">input: 0 to -5v</div>
+					<div class="buttons_list_item_info">playback level (-5v is quieter)</div>
 				</div>
 				<div class="buttons_state">while recording</div>
 				<div class="cv_list_item">
@@ -277,27 +277,42 @@
 					<h4>w/ (top)</h4>
 				</div>
 				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span></div>
-					<div class="buttons_list_item_info"><i>blinks to indicate play speed</i></div>
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info"><i>blinks at cue boundries</i></div>
 				</div>
 				<div class="item_header">
 					<h4>loop</h4>
 				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons">all off</div>
-					<div class="buttons_list_item_info">not looping</div>
+					<div class="buttons_list_item_info">not looping - <i>past last cue point</i></div>
 				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
 					<div class="buttons_list_item_info">looping &mdash; <i>brightness indicates current loop position</i></div>
 				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> to <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">not looping &mdash; <i>brightness indicates current position between cues</i></div>
+				</div>
 				<div class="item_header">
 					<h4>play</h4>
 				</div>
+				<div class="buttons_state">dub, caption, signal, and caption</div>
 				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> to <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">white</span></div>
+					<div class="buttons_list_item_info">playing</div>
+				</div>
+				<div class="buttons_state">transport</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> to <span class="w_leds_orange">white</span></div>
 					<div class="buttons_list_item_info">tape speed &mdash; fast backwards (<span class="w_leds_orange">orange</span>) to fast forwards (<span class="w_leds_white">white</span>)
 						</div>
+				</div>
+				<div class="buttons_state">sample</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">white</span></div>
+					<div class="buttons_list_item_info">v/octave tape speed - <i>dimmer is slower</i></div>
 				</div>
 				<div class="item_header">
 					<h4>record</h4>
@@ -313,6 +328,15 @@
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
 					<div class="buttons_list_item_info">recording in overwrite mode</div>
+				</div>
+				<div class="buttons_state">dub mode, with cable into <span class="w_this_that">THAT</span></div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span></div>
+					<div class="buttons_list_item_info">not recording</div>
+				</div>
+				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span> + <span class="w_leds_white">white</span></div>
+					<div class="buttons_list_item_info">recording - <i><span class="w_leds_orange">orange</span> brightens toward overwrite</i></div>
 				</div>
 
 			</div>
@@ -339,11 +363,11 @@
 					<h4>transport</h4>
 				</div>
 				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▲</span></div>
+					<div class="buttons_list_item_buttons"><span class="w_buttons">▲</span></div>
 					<div class="buttons_list_item_info">rewind tape</div>
 				</div>
 				<div class="buttons_list_item">
-					<div class="buttons_list_item_buttons"><span class="w_buttons">play</span> + <span class="w_buttons">▼</span></div>
+					<div class="buttons_list_item_buttons"><span class="w_buttons">▼</span></div>
 					<div class="buttons_list_item_info">fast-forward tape</div>
 				</div>
 				<div class="buttons_list_item">
@@ -417,7 +441,7 @@
 				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_leds_orange">orange</span></div>
-					<div class="buttons_list_item_info"><i>blinks to indicate play speed</i></div>
+					<div class="buttons_list_item_info"><i>blinks at cue boundries</i></div>
 				</div>
 				<div class="item_header">
 					<h4>loop</h4>
@@ -555,7 +579,7 @@
 				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_leds_white">white</span></div>
-					<div class="buttons_list_item_info"><i>blinks to indicate play speed</i></div>
+					<div class="buttons_list_item_info"><i>blinks at cue boundries</i></div>
 				</div>
 				<div class="item_header">
 					<h4>loop</h4>
@@ -568,8 +592,12 @@
 					<h4>play</h4>
 				</div>
 				<div class="buttons_list_item">
+					<div class="buttons_list_item_buttons">all off</div>
+					<div class="buttons_list_item_info">not playing</i></div>
+				</div>
+				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_leds_white">white</span></div>
-					<div class="buttons_list_item_info">v/octave tape speed &mdash; <i>dimmer is slower</i></div>
+					<div class="buttons_list_item_info">v/octave tape speed when playing &mdash; <i>dimmer is slower</i></div>
 				</div>
 				<div class="item_header">
 					<h4>record</h4>
@@ -607,8 +635,7 @@
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_buttons">loop</span></div>
 					<div class="buttons_list_item_info">then select new tape with <span class="w_buttons">loop</span>, <span class="w_buttons">play</span>, and <span class="w_buttons">record</span><br>
-						then <span class="w_buttons">▼</span> to confirm new tape selection and exit
-						</div>
+						then <span class="w_buttons">▼</span> to confirm new tape selection and exit to <span class="w_modes">NAV</span></div>
 				</div>
 
 				<div class="item_header">
@@ -624,7 +651,7 @@
 				</div>
 				<div class="buttons_list_item">
 					<div class="buttons_list_item_buttons"><span class="w_buttons">loop (hold)</span></div>
-					<div class="buttons_list_item_info">then press <span class="w_buttons">record</span> to confirm clear all cues and exit</div>
+					<div class="buttons_list_item_info">then press <span class="w_buttons">record</span> to confirm clear all cues and exit to <span class="w_modes">NAV</span></div>
 				</div>
 				
 				<div class="item_header">
@@ -706,7 +733,7 @@
 
 			<ul>
 				<li>turn on synthesizer while holding <span class="w_buttons">record</span> + <span class="w_buttons">▼</span> &mdash; <i>the <span class="w_buttons">play</span> <span class="w_leds_orange">orange</span> LED should be slowly pulsing</i></li>
-				<li>press <span class="w_buttons">play</span>, followed by <span class="w_buttons">record</span>, followed by <span class="w_buttons">loop</span> (follow the lights)</li>
+				<li>then press <span class="w_buttons">play</span>, followed by <span class="w_buttons">record</span>, followed by <span class="w_buttons">loop</span> (follow the lights)</li>
 			</ul>
 
 			<div class="item_header">
@@ -736,11 +763,12 @@
 				<li><a href="https://www.whimsicalraps.com/products/wslash" target="_blank">w/ at the mannequins site</a></li>
 				<li><a href="https://cdn.shopify.com/s/files/1/0714/9931/files/WSLASH-Manual-Web.pdf?6138544115543035176" target="_blank">official manual</a></li>
 				<li><a href="https://cdn.shopify.com/s/files/1/0714/9931/files/wslash-refcard.pdf?9210113580409418992" target="_blank">official reference card</a></li>
+				<li><a href="https://www.youtube.com/watch?v=gsHPmaHnWGY&app=desktop" target="_blank">tutorial video by Sam Wolk</a></li>
 				<li><a href="https://www.whimsicalraps.com/pages/support-faq" target="_blank">faq</a></li>
 				<li><a href="https://www.whimsicalraps.com/pages/w-latest-version" target="_blank">v1.2 firmware</a></li>
 				<li><a href="https://www.whimsicalraps.com/pages/slashes" target="_blank">slashes (connect multiple w/ with i2c)</a></li>
 				<li><a href="https://www.whimsicalraps.com/pages/w-type" target="_blank">w/ type (connect monome teletype to w/)</a></li>
-				<li><a href="https://llllllll.co/t/mannequins-w-with/11420/1572" target="_blank">w/ discussion at lines forum</a></li>
+				<li><a href="https://llllllll.co/t/mannequins-w-with/11420/" target="_blank">w/ discussion at lines forum</a></li>
 				<li><a href="https://llllllll.co/t/help-w/14749/" target="_blank">w/ help at lines forum</a></li>
 			</ul>
 			</div>
